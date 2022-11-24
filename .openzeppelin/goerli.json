@@ -1,0 +1,244 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x1EBa2106791383D8Efe193Dc70c4f0bBe0FEaC65",
+    "txHash": "0xd06f2b57a7cd8acd778d86c27808bbfe611e646e170c845cfeb362d34c17f9a8"
+  },
+  "proxies": [
+    {
+      "address": "0xE64A8865f349FC69c4dfcB76397fd2bcC0EbbA7c",
+      "txHash": "0xffbbf9b5891e6f68d1dbd1eb1ed277a2b61239add6a0224aab6a3f0943824230",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x576E4df9f9df070e0ae7B4A8f920C814a92eFdB0",
+      "txHash": "0x853267ca464e71cf8bd811f07f33a0766274e59a87a5f10a851445f5add26ae5",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "1ce3520d8f83802b930399367b36a594f326f32ad299aa7795565846bfd4958c": {
+      "address": "0xc606dE20B7bCdC37D64a02F2A3eacC83A74659e7",
+      "txHash": "0x81226cb2f0e555050b8533e23f7de2fed1df456ac9e4c2ccbf4d173e5def82e0",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "qty",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:31"
+          },
+          {
+            "label": "votes",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:32"
+          },
+          {
+            "label": "items",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_struct(Item)6_storage)dyn_storage",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:33"
+          },
+          {
+            "label": "authorOf",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:35"
+          },
+          {
+            "label": "votedBy",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:37"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Item)6_storage)dyn_storage": {
+            "label": "struct Listing.Item[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+            "label": "mapping(uint256 => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Item)6_storage": {
+            "label": "struct Listing.Item",
+            "members": [
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "votes",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "73737189e9ca17c3121f2b304dece472bbc586ed302e5c8f86fd85961f06bd36": {
+      "address": "0x057Da970bC613b1F469b91ff3ef70D743E15e0D0",
+      "txHash": "0x86fa8a46fbf580a25d2afe6f47bd2ac28586e11f40a3b1e6a46cabb833fdec46",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "qty",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:33"
+          },
+          {
+            "label": "votes",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:34"
+          },
+          {
+            "label": "items",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_array(t_struct(Item)462_storage)dyn_storage",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:35"
+          },
+          {
+            "label": "authorOf",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:37"
+          },
+          {
+            "label": "votedBy",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+            "contract": "Listing",
+            "src": "contracts/Listing.sol:39"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Item)462_storage)dyn_storage": {
+            "label": "struct Listing.Item[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+            "label": "mapping(uint256 => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Item)462_storage": {
+            "label": "struct Listing.Item",
+            "members": [
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "votes",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

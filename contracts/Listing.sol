@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 
-contract Listing {
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+
+contract Listing is Initializable {
     struct Item {
         string title;
         uint votes;
@@ -35,6 +37,8 @@ contract Listing {
     mapping(uint => address) public authorOf;
 
     mapping(uint => mapping(address => bool)) public votedBy;
+
+    function initialize() public initializer {}
 
     function addItem(string memory title) public returns (uint) {
         uint id = qty;
