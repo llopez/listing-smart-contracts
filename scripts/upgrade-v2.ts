@@ -6,12 +6,12 @@ dotenv.config();
 const PROXY = process.env.PROXY!;
 
 async function main() {
-  const Listing = await ethers.getContractFactory("Listing");
+  const ListingV2 = await ethers.getContractFactory("ListingV2");
 
-  const listing = await upgrades.upgradeProxy(PROXY, Listing);
-  await listing.deployed();
+  const listingV2 = await upgrades.upgradeProxy(PROXY, ListingV2);
+  await listingV2.deployed();
 
-  console.log(`Listing upgraded, impl: ${listing.address}`);
+  console.log(`Listing upgraded, impl: ${listingV2.address}`);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
