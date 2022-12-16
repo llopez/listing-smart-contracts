@@ -3,7 +3,7 @@ import { expect } from "chai";
 import { ethers } from "hardhat";
 import { ListingV2 } from "../typechain-types";
 
-describe("Listing", () => {
+describe("ListingV2", () => {
   let _listing: ListingV2;
   let _owner: SignerWithAddress;
   let _otherAccount: SignerWithAddress;
