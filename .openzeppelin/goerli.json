@@ -361,6 +361,128 @@
           }
         }
       }
+    },
+    "c66ba22e12a0bb6c118bea76f042ec644aff57c0100f4c14338f5f2d3ed5a104": {
+      "address": "0xc3A218e0D98825D0314A78549B32939557a4368c",
+      "txHash": "0x907a92f1590aa91a46c05f2307a2115d5b7b61eec7967b56f8f66fc9e306cd4e",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "qty",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "ListingV3",
+            "src": "contracts/ListingV3.sol:33"
+          },
+          {
+            "label": "votes",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "ListingV3",
+            "src": "contracts/ListingV3.sol:34"
+          },
+          {
+            "label": "items",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_array(t_struct(Item)462_storage)dyn_storage",
+            "contract": "ListingV3",
+            "src": "contracts/ListingV3.sol:35"
+          },
+          {
+            "label": "authorOf",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "ListingV3",
+            "src": "contracts/ListingV3.sol:37"
+          },
+          {
+            "label": "votedBy",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+            "contract": "ListingV3",
+            "src": "contracts/ListingV3.sol:39"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Item)462_storage)dyn_storage": {
+            "label": "struct ListingV3.Item[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+            "label": "mapping(uint256 => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Item)462_storage": {
+            "label": "struct ListingV3.Item",
+            "members": [
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "votes",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
     }
   }
 }
