@@ -1,13 +1,43 @@
-# Sample Hardhat Project
+# Listing Smart Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+These are the Listing smart contracts
 
-Try running some of the following tasks:
+## Tech Stack
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+* Hardhat
+* Solidity
+* TypeScript
+
+## Getting Started
+
+### First, add environment variables:
+
+The application makes use of 4 environment variables
+* RPC_URL
+* DEPLOYER_PRIVATE_KEY
+* ETHERSCAN_API_KEY
+* PROXY
+
+```bash
+touch .env
 ```
+
+### Then, install the dependencies
+
+```bash
+yarn install
+```
+
+### Finally, run the tests and deploy
+
+```bash
+yarn run hardhat test
+yarn run hardhat run scripts/3_deploy.ts
+```
+
+## Links
+
+To learn more about the project, take a look at the following resources:
+
+- https://goerli.etherscan.io/address/0xA3d8CD32d1C45f452682421B7d89bD523Af347b6 - smart contract on explorer
+
